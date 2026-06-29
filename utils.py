@@ -1,5 +1,4 @@
-#Helper functions used throughout the Basic SQL Formatter.
-
+# Helper functions used throughout the Basic SQL Formatter.
 
 def print_header():
     #Displays the application header.
@@ -11,8 +10,10 @@ def print_header():
 def display_menu():
     #Displays the main menu.
     print("\n1. Format SQL")
-    print("2. About")
-    print("3. Exit")
+    print("2. Format Transaction")
+    print("3. Format View / CTE")
+    print("4. About")
+    print("5. Exit")
 
 
 def about():
@@ -20,13 +21,15 @@ def about():
     print("\nAbout")
     print("-" * 45)
     print("Basic SQL Formatter")
-    print("Version : 1.0")
+    print("Version : 2.0")
     print("Language : Python")
     print("\nFeatures:")
     print("• Formats SQL queries for better readability")
     print("• Converts SQL keywords to uppercase")
     print("• Adds proper indentation")
     print("• Adds spaces around operators")
+    print("• Formats transaction blocks (BEGIN / COMMIT / ROLLBACK)")
+    print("• Formats CREATE VIEW and WITH ... AS (...) CTEs")
     print("• Interactive command-line interface")
     print("\nThis project is intended for learning and educational purposes.")
 
@@ -35,11 +38,15 @@ def pause():
     #Pauses the program until the user presses Enter.
     input("\nPress Enter to continue...")
 
+
 def print_success():
     #Displays a success message.
     print("\n✓ SQL formatted successfully!")
 
+
 def print_error(message):
-    #Displays an error message.
-    #Parameters:message (str): Error description.
+    """
+    Displays an error message.
+    Parameters: message (str): Error description.
+    """
     print(f"\nError: {message}")
