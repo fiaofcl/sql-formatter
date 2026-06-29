@@ -2,7 +2,6 @@
 # Expanded to cover: DML, DDL, DCL, TCL, stored procedures, transactions,
 # window functions, CTEs, subqueries, constraints, indexes, views, and more.
 
-
 # ── Single-word SQL keywords ──────────────────────────────────────────────────
 SQL_KEYWORDS = [
 

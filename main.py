@@ -1,5 +1,4 @@
 # Entry point for the Basic SQL Formatter.
-
 from formatter import format_sql
 from utils import (
     print_header,
@@ -31,15 +30,6 @@ def format_query():
 
 
 def format_transaction_query():
-    """
-    Prompts the user for a transaction block and formats it.
-
-    Accepts any TCL statement or a full BEGIN...COMMIT/ROLLBACK block.
-    Example input:
-        BEGIN TRANSACTION; UPDATE accounts SET balance=balance-100
-        WHERE id=1; UPDATE accounts SET balance=balance+100
-        WHERE id=2; COMMIT;
-    """
     print("\nTransaction Formatter")
     print("-" * 45)
     print("Tip: Enter a full transaction block, e.g.:")
@@ -64,19 +54,6 @@ def format_transaction_query():
 
 
 def format_view_query():
-    """
-    Prompts the user for a CREATE VIEW or CTE and formats it.
-
-    Accepts:
-    - CREATE VIEW / CREATE OR REPLACE VIEW statements
-    - WITH ... AS (...) SELECT ... CTE queries
-
-    Example inputs:
-        CREATE VIEW active_users AS SELECT id, name FROM users WHERE active = 1;
-
-        WITH sales AS (SELECT region, SUM(amount) AS total FROM orders
-        GROUP BY region) SELECT * FROM sales ORDER BY total DESC;
-    """
     print("\nView / CTE Formatter")
     print("-" * 45)
     print("Tip: Enter a CREATE VIEW statement or a WITH ... AS (...) CTE, e.g.:")
