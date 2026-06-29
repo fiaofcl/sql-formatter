@@ -12,7 +12,7 @@ from utils import (
 
 
 def format_query():
-    """Reads SQL from the user, formats it, and displays the result."""
+    #Reads SQL from the user, formats it, and displays the result.
     sql = input("\nEnter your SQL query:\n\n")
     if not sql.strip():
         print_error("SQL query cannot be empty.")
