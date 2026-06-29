@@ -777,7 +777,7 @@ COMPARISON_OPERATORS = [
     "!=",
     "||",    # string concat / OR in some dialects
     "->",    # JSON arrow (MySQL)
-    "->>",   # JSON arrow text (MySQL / PostgreSQL)
+    "->>",   # JSON arrow text (MySQL / PostgreSQL or any other )
     "#>",    # JSON path (PostgreSQL)
     "#>>",   # JSON path text (PostgreSQL)
     "@>",    # contains (PostgreSQL arrays / jsonb)
