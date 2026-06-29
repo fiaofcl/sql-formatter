@@ -1,6 +1,4 @@
-#keywords.py
 #Contains all SQL keywords supported by the Basic SQL Formatter.
-
 # Single-word SQL keywords
 SQL_KEYWORDS = [
     "SELECT",
