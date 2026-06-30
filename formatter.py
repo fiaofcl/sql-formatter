@@ -8,7 +8,7 @@ from keywords import (
 )
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+# ── Helpers ──────────────────────────────────────────────────────────
 
 def _detect_statement_type(sql):
     """Return the leading SQL statement keyword in uppercase, or '' if unknown."""
